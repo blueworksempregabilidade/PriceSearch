@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pesquisa de Preço</string>
+    <string name="app_version">v.0.0.2</string>
+    <string name="app_slogan">Economize no mercado</string>
+    <string name="app_welcome">Seja bem-vindo</string>
+    <string name="text_forgot_password">Esqueceu a senha?</string>
+    <string name="text_new_user">Registrar novo usuário</string>
+    <string name="text_sign_in">Entrar</string>
+    <string name="text_log_in">Conecte-se</string>
+    <string name="text_email">Email</string>
+    <string name="text_user_name">Nome de usuário</string>
+    <string name="text_error_fill_mandatory_information">Informação obrigatória</string>
+    <string name="text_error_all_fields_required">Todos os campos obrigatórios</string>
+    <string name="title_activity_login">Atividade de login</string>
+    <string name="text_email_not_valid">Informe um endereço de email</string>
+    <string name="text_abandon_reset_password">Abandonar a troca de senha</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar ou registrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="text_fetch_user">Buscar usuário</string>
+    <string name="text_email_or_username">Email ou nome de usuário</string>
+    <string name="text_email_or_password_incorrect">Email or senha incorreta</string>
+
+    <string name="text_full_name">Nome completo</string>
+    <string name="text_confirm_button">Terminar</string>
+    <string name="text_reset_button">Reiniciar</string>
+    <string name="text_sign_up">Inscrever-se</string>
+    <string name="text_password">Senha</string>
+    <string name="text_log_out">Sair</string>
+    <string name="text_otp">Informe OTP</string>
+    <string name="text_new_password">Informe a nova senha</string>
+    <string name="already_have_an_account_login">Já tem uma conta? Faça a conexão</string>
+
+    <string name="text_wifi_interface_not_avaliable">WiFi interface not available</string>
+
+    <string name="invalid_assets">Unable to load assets</string>
+    <string name="permission_required">Camera permissions are required to use the QR Scanner</string>
+    <string name="scan_prompt">Scan QR Code from lottiefiles.com</string>
+    <string name="render_times_graph">Show real time render time graph</string>
+    <string name="hardware_acceleration">Use hardware acceleration</string>
+    <string name="enable_merge_paths">Enable merge paths (KK+ only)</string>
+    <string name="menu_item_visibility">Hide Controls</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_animation_viewer">Animation Viewer</string>
+    <string name="shortcut_animation_viewer_short">Viewer</string>
+    <string name="shortcut_animated_typography">Animated Typography</string>
+    <string name="shortcut_animated_typography_short">Typography</string>
+    <string name="shortcut_animated_app_tutorial">Animated App Tutorial</string>
+    <string name="shortcut_animated_app_tutorial_short">App Tutorial</string>
+    <string name="shortcut_full_screen_animation">Full Screen Animation</string>
+    <string name="shortcut_full_screen_animation_short">Full Screen</string>
+    <string name="shortcut_disabled">Shortcut Disabled</string>
+    <string name="start_typing">Start typing!</string>
+    <string name="qr_code_overlay">QR code overlay</string>
+    <string name="qr_permission_denied">QR scanning requires the camera permission.</string>
+
+    <string name="scale">Scale</string>
+    <string name="background">Background</string>
+    <string name="ms">ms</string>
+
+    <string name="bottom_bar_showcase">Showcase</string>
+    <string name="bottom_bar_preview">Preview</string>
+    <string name="bottom_bar_lottiefiles">Lottiefiles</string>
+    <string name="bottom_bar_learn">Learn</string>
+
+    <string name="preview_title">Preview</string>
+    <string name="preview_qr">Scan a QR code</string>
+    <string name="preview_assets">Load from assets</string>
+    <string name="preview_file">Open a file</string>
+    <string name="preview_url">Enter a URL to a json or zip file</string>
+    <string name="preview_load">Load</string>
+    <string name="preview_cancel">Cancel</string>
+
+    <string name="composition_load_error">There was an error loading the composition</string>
+
+    <string name="control_bar_border">Border</string>
+    <string name="control_bar_background_color">Background</string>
+    <string name="control_bar_hardware_acceleration">Hardware Acceleration</string>
+    <string name="control_bar_render_graph">Render Graph</string>
+    <string name="control_bar_scale">Scale</string>
+    <string name="control_bar_masks_and_mattes">Outline Masks</string>
+    <string name="control_bar_trim">Trim</string>
+    <string name="control_bar_speed">Speed</string>
+    <string name="control_bar_key_paths">Show KeyPaths</string>
+    <string name="control_bar_merge_paths">Merge Paths (KitKat+)</string>
+    <string name="control_bar_apply_opacity_to_layers">Apply Opacity To Layers</string>
+
+    <string name="minus_one_x">-1x</string>
+    <string name="minus_half_x">-0.5x</string>
+    <string name="half_x">0.5x</string>
+    <string name="one_x">1x</string>
+    <string name="two_x">2x</string>
+
+    <string name="min_frame_dialog">Set min frame</string>
+    <string name="max_frame_dialog">Set max frame</string>
+    <string name="min_frame">Min frame: %1$d</string>
+    <string name="max_frame">Max frame: %1$d</string>
+
+    <string name="render_times_per_layer_button">View render times per layer</string>
+    <string name="lottie_version">Lottie %1$s</string>e
+    <string name="render_times_title">Render time per layer</string>
+    <string name="key_paths_title">KeyPaths in animation.\nUsed for dynamic properties.</string>
+    <string name="warnings_title">Warnings</string>
+
+    <string name="lottiefiles">Lottiefiles</string>
+    <string name="lottiefiles_airbnb">Lottiefiles is not affiliated with Airbnb</string>
+    <string name="popular">Popular</string>
+    <string name="recent">Recent</string>
+    <string name="search">Search</string>
+
+    <string name="anonymous">Anonymous</string>
+
+    <string name="showcase_item_bullseye">\nBullseye</string>
+    <string name="showcase_item_dynamic_properties">Dynamic\nProperties</string>
+    <string name="showcase_item_animated_text">Animated\nText</string>
+    <string name="showcase_item_dynamic_text">Dynamic\nText</string>
+    <string name="showcase_item_recycler_view">RecyclerView</string>
+    <string name="bullseye_drag_dot">Drag the blue dot</string>
+
+    <string name="text_enter_the_password_again">Informe novamente a senha</string>
+    <string name="text_password_are_not_same">As senhas não são iguais</string>
+    <string name="text_insert_error">Erro ao inserir</string>
+    <string name="text_insert_success">Sucesso ao inserir</string>
+    <string name="text_list_products">Produtos</string>
+    <string name="text_connection_error">Connect Failed</string>
+
+    <string name="text_category_hortifruti">Hortifruti: Essa seção oferece frutas, legumes e verduras frescas.</string>
+    <string name="text_category_grocery_store">Mercearia: Aqui você encontrará itens alimentícios secos e enlatados, como arroz, feijão, massas, cereais, molhos e enlatados em geral.</string>
+    <string name="text_category_meat">Carnes: Inclui carne bovina, suína, aves, peixes e frutos do mar, frescos ou congelados.</string>
+    <string name="text_category_cold_cuts_and_dairy_products">Frios e Laticínios: Essa seção oferece queijos, iogurtes, leite, manteiga, margarina, presuntos e embutidos.</string>
+    <string name="text_category_bakery">Padaria: Aqui você encontrará pães, bolos, doces e salgados, tanto frescos quanto industrializados.</string>
+    <string name="text_category_drinks">Bebidas: Nessa área, você encontrará bebidas alcoólicas e não alcoólicas, como água, refrigerantes, sucos, cervejas, vinhos e destilados.</string>
+    <string name="text_category_frozen">Congelados: Essa seção contém alimentos congelados, como sorvetes, refeições prontas, legumes e frutas congeladas.</string>
+    <string name="text_category_cleaning_products">Produtos de Limpeza: Nesta área, você encontrará detergentes, sabão em pó, desinfetantes, amaciantes, e outros produtos para higiene e limpeza doméstica.</string>
+    <string name="text_category_personal_hygiene_and_beauty">Higiene Pessoal e Beleza: Aqui você encontrará produtos como shampoo, condicionador, sabonetes, desodorantes, maquiagem, e produtos para cuidados com a pele e cabelo.</string>
+    <string name="text_category_baby_items">Artigos para bebês: Nessa seção, você encontrará fraldas, lenços umedecidos, alimentos para bebês, mamadeiras e outros itens relacionados.</string>
+    <string name="text_category_pet_shop">Pet Shop: Aqui você encontrará alimentos e acessórios para animais de estimação, como ração, brinquedos, casinhas e produtos de higiene.</string>
+    <string name="text_category_appliances_and_electronics">Eletrodomésticos e Eletrônicos: Essa área oferece produtos como televisores, geladeiras, fogões, micro-ondas, smartphones, e outros aparelhos eletrônicos e eletrodomésticos.</string>
+    <string name="text_category_housewares_and_decoration">Utilidades domésticas e decoração: Aqui você encontrará itens como utensílios de cozinha, talheres, panelas, toalhas, roupas de cama e objetos de decoração.</string>
+    <string name="text_category_stationery_and_office">Papelaria e escritório: Nessa seção, você encontrará materiais escolares e de escritório, como cadernos, canetas, lápis, agendas e itens de informática.</string>
+    <string name="text_category_others">Outras: items de estação ou não previstos.</string>
+    <string name="text_total_purchase_value_forecast">Previsão do Valor Total da Compra</string>
+
+</resources>

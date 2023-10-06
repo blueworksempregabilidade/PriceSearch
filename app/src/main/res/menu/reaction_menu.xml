@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reaction_edit"
+        android:icon="@drawable/ic_reaction_edit"
+        app:showAsAction="ifRoom"
+        android:title="Edit" />
+    <item
+        android:id="@+id/reaction_shop"
+        android:icon="@drawable/ic_reaction_shop"
+        app:showAsAction="ifRoom"
+        android:title="Shop" />
+    <item
+        android:id="@+id/reaction_delete"
+        android:icon="@drawable/ic_reaction_delete"
+        app:showAsAction="ifRoom"
+        android:title="Delete" />
+    <item
+        android:id="@+id/reaction_reset"
+        android:icon="@drawable/ic_reaction_reset"
+        app:showAsAction="ifRoom"
+        android:title="Reset" />
+    <item
+        android:id="@+id/reaction_close"
+        android:icon="@drawable/ic_reaction_close"
+        app:showAsAction="ifRoom"
+        android:title="Close" />
+
+</menu>

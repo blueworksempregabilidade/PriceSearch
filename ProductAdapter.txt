@@ -1,0 +1,194 @@
+package br.com.profdigital.priceresearch;
+
+// 3
+
+import android.content.Context;
+import android.graphics.Color;
+import android.view.ContextMenu;
+import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.Filter;
+import android.widget.Filterable;
+import android.widget.RatingBar;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> implements Filterable {
+
+    // nv remove private final LayoutInflater mLayoutInflater;
+    private View.OnClickListener mOnItemClickListener;
+    private View.OnLongClickListener mOnLongClickListener;
+
+    private Context mContext;
+    private List<Product> mProductList;
+
+    public ProductAdapter(Context context, List<Product> productList) { //nv
+        mContext = context;
+        mProductList = productList;
+    }
+
+    private List<Product> mProductListFull; // será usada para recompor totalmente a lista
+
+//    public ProductAdapter(Context mContext){ //nv remove
+//        mLayoutInflater = LayoutInflater.from(mContext);
+//    }
+
+    public String setPriceColor(double vRating){
+        if(vRating < 3){
+            return "#BF0404"; //299E4A green     737373 gray
+        } else {
+            return "#000000";
+        }
+    }
+
+ //x1  public class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener {
+   public class ProductViewHolder extends RecyclerView.ViewHolder {
+        // widgets do layout card_item_list.xml
+        private final TextView mTextViewItemProductDescription;
+        private final TextView mTextViewItemProductPrice;
+        private final RatingBar mRatingBarItemProduct;
+
+        private final Button mButtonProductQuantity;
+
+        //private final ImageView mImageViewProduct;
+
+
+     int vQuantity = 0;
+     public class ClickMyButtonQuantity implements View.OnClickListener{
+         @Override
+         public void onClick(View view) {
+             vQuantity++;
+             mButtonProductQuantity.setText(""+vQuantity);
+         }
+     }
+
+     private ProductViewHolder(@NonNull View itemView) {
+            super(itemView);
+            mTextViewItemProductDescription = itemView.findViewById(R.id.textView_item_product_name);
+            mTextViewItemProductPrice = itemView.findViewById(R.id.textView_item_product_price);
+            mRatingBarItemProduct = itemView.findViewById(R.id.ratingBar_item_product_price_perception);
+            mButtonProductQuantity = itemView.findViewById(R.id.button_product_quantity);
+            mButtonProductQuantity.setOnClickListener(new ClickMyButtonQuantity());
+
+            //mImageViewProduct = itemView.findViewById(R.id.image_item_product_list);
+
+            itemView.setTag(this);
+            itemView.setOnClickListener(mOnItemClickListener);
+
+           // itemView.setOnLongClickListener(mOnLongClickListener);
+     //X1       itemView.setOnCreateContextMenuListener(this);
+
+        }
+
+// X1       @Override //https://stackoverflow.com/questions/26466877/how-to-create-context-menu-for-recyclerview
+//        public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
+//            contextMenu.setHeaderTitle("Select The Action " + view.getId());
+//            contextMenu.add(0, view.getId(), 0, "Call");//groupId, itemId, order, title
+//            contextMenu.add(0, view.getId(), 0, "SMS");
+//
+//        }
+
+    }
+
+    @NonNull
+    @Override  // esse método carrega um item da lista
+    public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup mViewGroupParent, int viewType) {
+        LayoutInflater mLayoutInflater = LayoutInflater.from(mContext); //nv
+        //View mItemView = mLayoutInflater.inflate(R.layout.card_item_product_list, null);
+        //View mItemView = mLayoutInflater.inflate(R.layout.card_item_product_list, mViewGroupParent, false);
+        View mItemView = mLayoutInflater.inflate(R.layout.card_item_product_list_2, mViewGroupParent, false);
+        return new ProductViewHolder(mItemView);
+    }
+
+    @Override        // vinculo dos objetos da tela com o objeto do java
+    public void onBindViewHolder(@NonNull ProductViewHolder mProductViewHolder, int vPosition) {
+        Product mProductCurrent = mProductList.get(vPosition);
+        mProductViewHolder.mTextViewItemProductDescription.setText(mProductCurrent.getName());
+
+        // https://pt.stackoverflow.com/questions/30701/formata%C3%A7%C3%A3o-de-um-double-em-java
+        // https://pt.stackoverflow.com/questions/219211/qual-a-forma-correta-de-usar-os-tipos-float-double-e-decimal
+        // https://github.com/maniero/SOpt/blob/master/Conceptual.md  MARCOS DIVULGUE PARA OS ALUNOS
+
+//        mProductViewHolder.mTextViewItemProductPrice.setText(String.valueOf(mProductCurrent.getPrice()));
+        String mStringPrice = String.format("%.2f", mProductCurrent.getPrice());
+        mProductViewHolder.mTextViewItemProductPrice.setText(mStringPrice);
+        mProductViewHolder.mTextViewItemProductPrice.setTextColor(Color.parseColor(setPriceColor(mProductCurrent.getRating())));
+        mProductViewHolder.mRatingBarItemProduct.setRating(mProductCurrent.getRating());
+        // veja aqui ProductViewHolder - resposta de muitos erros
+ //deveria ser aqui       mProductViewHolder.mButtonProductQuantity.setText(""+vQuantity);
+
+        //mProductViewHolder.mImageViewProduct.setImageDrawable(mContext.getResources().getDrawable(mProductCurrent.getImage()));
+
+    }
+
+    @Override
+    public int getItemCount() {
+        if(mProductList != null){
+            return  mProductList.size();
+        } else {
+            return 0;
+        }
+    }
+
+    public void setProductList(List<Product> mProducts){
+        mProductList = mProducts;
+        mProductListFull = new ArrayList<>(mProducts);
+        notifyDataSetChanged();
+    }
+
+    public Product getProductAt(int vPosition){
+        return mProductList.get(vPosition);
+    }
+
+    public void setOnItemClickListener(View.OnClickListener mItemClickListener){
+        mOnItemClickListener = mItemClickListener;
+    }
+
+    public void setOnLongClickListener(View.OnLongClickListener mItemLongClickListener){
+        mOnLongClickListener = mItemLongClickListener;
+    }
+
+    private Filter applyProductFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
+            List<Product> mFilteredList = new ArrayList<>();
+            if(charSequence == null  ||  charSequence.length() == 0 ) {
+                mFilteredList.addAll(mProductListFull);
+            } else {
+                String mFilterPattern = charSequence.toString().toLowerCase().trim();
+                for(Product mProduct : mProductListFull ) {
+                    if(mProduct.getName().toLowerCase().contains(mFilterPattern)){
+                        mFilteredList.add(mProduct);
+                    }
+                }
+            }
+            FilterResults mFilterResults = new FilterResults();
+            mFilterResults.values = mFilteredList;
+            return mFilterResults;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+            mProductList.clear();
+            mProductList.addAll((List) filterResults.values);
+            notifyDataSetChanged();
+        }
+    };
+
+    @Override
+    public Filter getFilter(){
+        return applyProductFilter;
+    }
+
+}

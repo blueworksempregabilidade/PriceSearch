@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_item_list_product_rev2"
+        android:backgroundTint="@color/gray_200"
+        android:padding="6dp"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/image_item_product_list_rev2"
+                android:src="@drawable/pig"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_item_product_name_rev2"
+                android:text="@string/app_name"
+                android:textSize="18sp"
+                android:layout_marginStart="66dp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_item_product_price_rev2"
+                android:text="99.99"
+                android:textSize="12sp"
+                android:layout_below="@+id/textView_item_product_name_rev2"
+                android:layout_marginStart="66dp"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar_item_product_price_perception_rev2"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginStart="66dp"
+                android:layout_below="@id/textView_item_product_price_rev2"
+                android:stepSize="0.5" />
+
+            <!--            Marcos usar botao + e - como no restaurantMenu e Ifood-->
+
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/button_product_remove_rev2"
+                android:background="@drawable/item_remove"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="96dp"/>
+
+<!--            app:backgroundTint="@null"-->
+<!--            app:icon="@drawable/ic_remove"-->
+<!--            android:text="Remove"-->
+<!--            android:autoSizeTextType="uniform"-->
+
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/button_product_quantity_rev2"
+                android:background="@drawable/item_unit"
+                android:text="0"
+                android:textSize="18sp"
+                android:gravity="center"
+                app:backgroundTint="@null"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="48dp"/>
+
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/button_product_add_rev2"
+                android:background="@drawable/item_add"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

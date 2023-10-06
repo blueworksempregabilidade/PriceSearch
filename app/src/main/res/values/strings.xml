@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Price Research</string>
+    <string name="app_version">v.0.0.2</string>
+    <string name="app_slogan">Save on the market</string>
+    <string name="app_welcome">Be welcome</string>
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_new_user">Register new user</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_password">Password</string>
+    <string name="text_log_in">Login</string>
+    <string name="text_log_out">Logout</string>
+    <string name="text_fetch_user">Fetch user</string>
+    <string name="text_email_or_username">Email or username</string>
+    <string name="text_email_or_password_incorrect">Email or password incorrect</string>
+
+    <string name="text_full_name">Full name</string>
+    <string name="text_email">Email</string>
+    <string name="text_user_name">Username</string>
+
+    <string name="text_error_fill_mandatory_information">Mandatory information</string>
+    <string name="text_error_all_fields_required">All fields required</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="text_email_not_valid">Email not valid</string>
+    <string name="text_abandon_reset_password">Abandon reset password</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="welcome" translatable="false">"Welcome !"</string>
+
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+
+    <string name="login_failed" translatable="false">"Login failed"</string>
+
+    <string name="title_activity_sign_up" translatable="false">SignUpActivity</string>
+    <string name="already_have_an_account_login" translatable="false">Already have an account? Login</string>
+
+
+    <string name="item_menu_pizza" translatable="false">Pizza</string>
+
+    <string name="item_menu_burger" translatable="false">Burger</string>
+    <string name="item_menu_soft_drink" translatable="false">Soft Drink</string>
+    <string name="item_menu_juice" translatable="false">Juice</string>
+    <string name="item_menu_water" translatable="false">Water</string>
+    <string name="item_menu_ice_cream" translatable="false">Ice cream</string>
+    <string name="item_menu_coffee" translatable="false">Coffee</string>
+    <string name="item_menu_cake" translatable="false">Cake</string>
+    <string name="item_menu_soup" translatable="false">Soup</string>
+    <string name="item_menu_tea" translatable="false">Tea</string>
+
+    <string name="text_confirm_button">Finish</string>
+    <string name="text_reset_button">Reset</string>
+    <string name="text_otp">Enter OTP</string>
+    <string name="text_new_password">Enter new password</string>
+
+    <string name="text_wifi_interface_not_avaliable">WiFi interface not available</string>
+
+    <string name="invalid_assets">Unable to load assets</string>
+    <string name="permission_required">Camera permissions are required to use the QR Scanner</string>
+    <string name="scan_prompt">Scan QR Code from lottiefiles.com</string>
+    <string name="render_times_graph">Show real time render time graph</string>
+    <string name="hardware_acceleration">Use hardware acceleration</string>
+    <string name="enable_merge_paths">Enable merge paths (KK+ only)</string>
+    <string name="menu_item_visibility">Hide Controls</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_animation_viewer">Animation Viewer</string>
+    <string name="shortcut_animation_viewer_short">Viewer</string>
+    <string name="shortcut_animated_typography">Animated Typography</string>
+    <string name="shortcut_animated_typography_short">Typography</string>
+    <string name="shortcut_animated_app_tutorial">Animated App Tutorial</string>
+    <string name="shortcut_animated_app_tutorial_short">App Tutorial</string>
+    <string name="shortcut_full_screen_animation">Full Screen Animation</string>
+    <string name="shortcut_full_screen_animation_short">Full Screen</string>
+    <string name="shortcut_disabled">Shortcut Disabled</string>
+    <string name="start_typing">Start typing!</string>
+    <string name="qr_code_overlay">QR code overlay</string>
+    <string name="qr_permission_denied">QR scanning requires the camera permission.</string>
+
+    <string name="scale">Scale</string>
+    <string name="background">Background</string>
+    <string name="ms">ms</string>
+
+    <string name="bottom_bar_showcase">Showcase</string>
+    <string name="bottom_bar_preview">Preview</string>
+    <string name="bottom_bar_lottiefiles">Lottiefiles</string>
+    <string name="bottom_bar_learn">Learn</string>
+
+    <string name="preview_title">Preview</string>
+    <string name="preview_qr">Scan a QR code</string>
+    <string name="preview_assets">Load from assets</string>
+    <string name="preview_file">Open a file</string>
+    <string name="preview_url">Enter a URL to a json or zip file</string>
+    <string name="preview_load">Load</string>
+    <string name="preview_cancel">Cancel</string>
+
+    <string name="composition_load_error">There was an error loading the composition</string>
+
+    <string name="control_bar_border">Border</string>
+    <string name="control_bar_background_color">Background</string>
+    <string name="control_bar_hardware_acceleration">Hardware Acceleration</string>
+    <string name="control_bar_render_graph">Render Graph</string>
+    <string name="control_bar_scale">Scale</string>
+    <string name="control_bar_masks_and_mattes">Outline Masks</string>
+    <string name="control_bar_trim">Trim</string>
+    <string name="control_bar_speed">Speed</string>
+    <string name="control_bar_key_paths">Show KeyPaths</string>
+    <string name="control_bar_merge_paths">Merge Paths (KitKat+)</string>
+    <string name="control_bar_apply_opacity_to_layers">Apply Opacity To Layers</string>
+
+    <string name="minus_one_x">-1x</string>
+    <string name="minus_half_x">-0.5x</string>
+    <string name="half_x">0.5x</string>
+    <string name="one_x">1x</string>
+    <string name="two_x">2x</string>
+
+    <string name="min_frame_dialog">Set min frame</string>
+    <string name="max_frame_dialog">Set max frame</string>
+    <string name="min_frame">Min frame: %1$d</string>
+    <string name="max_frame">Max frame: %1$d</string>
+
+    <string name="render_times_per_layer_button">View render times per layer</string>
+    <string name="lottie_version">Lottie %1$s</string>e
+    <string name="render_times_title">Render time per layer</string>
+    <string name="key_paths_title">KeyPaths in animation.\nUsed for dynamic properties.</string>
+    <string name="warnings_title">Warnings</string>
+
+    <string name="lottiefiles">Lottiefiles</string>
+    <string name="lottiefiles_airbnb">Lottiefiles is not affiliated with Airbnb</string>
+    <string name="popular">Popular</string>
+    <string name="recent">Recent</string>
+    <string name="search">Search</string>
+
+    <string name="anonymous">Anonymous</string>
+
+    <string name="showcase_item_bullseye">\nBullseye</string>
+    <string name="showcase_item_dynamic_properties">Dynamic\nProperties</string>
+    <string name="showcase_item_animated_text">Animated\nText</string>
+    <string name="showcase_item_dynamic_text">Dynamic\nText</string>
+    <string name="showcase_item_recycler_view">RecyclerView</string>
+    <string name="bullseye_drag_dot">Drag the blue dot</string>
+    <string name="text_enter_the_password_again">Enter the password again</string>
+    <string name="text_password_are_not_same">Password are not the same</string>
+    <string name="text_insert_error">Insert error</string>
+    <string name="text_insert_success">Insert success</string>
+    <string name="text_list_products">Products</string>
+    <string name="text_connection_error">Connect Failed</string>
+
+    <string name="text_category_hortifruti">Hortifruti: This section offers fresh fruits and vegetables.</string>
+    <string name="text_category_grocery_store">Grocery store: Here you will find dry and canned food items, such as rice, beans, pasta, cereals, sauces and canned goods in general.</string>
+    <string name="text_category_meat">Meat: Includes beef, pork, poultry, fish and seafood, fresh or frozen.</string>
+    <string name="text_category_cold_cuts_and_dairy_products">Cold cuts and dairy products: This section offers cheese, yogurt, milk, butter, margarine, ham and sausages.</string>
+    <string name="text_category_bakery">Bakery: Here you will find breads, cakes, sweets and snacks, both fresh and processed.</string>
+    <string name="text_category_drinks">Drinks: In this area, you will find alcoholic and non-alcoholic drinks, such as water, soft drinks, juices, beers, wines and spirits.</string>
+    <string name="text_category_frozen">Frozen: This section contains frozen foods such as ice cream, ready meals, frozen vegetables and fruits.</string>
+    <string name="text_category_cleaning_products">Cleaning Products: In this area, you will find detergents, washing powder, disinfectants, fabric softeners, and other products for hygiene and domestic cleaning.</string>
+    <string name="text_category_personal_hygiene_and_beauty">Personal Hygiene and Beauty: Here you will find products such as shampoo, conditioner, soaps, deodorants, makeup, and products for skin and hair care.</string>
+    <string name="text_category_baby_items">Baby Items: In this section, you all find diapers, wipes, baby food, bottles, and other related items.</string>
+    <string name="text_category_pet_shop">Pet Shop: Here you will find food and accessories for pets, such as food, toys, houses and hygiene products.</string>
+    <string name="text_category_appliances_and_electronics">Appliances and Electronics: This area offers products such as televisions, refrigerators, stoves, microwaves, smartphones, and other electronic devices and household appliances.</string>
+    <string name="text_category_housewares_and_decoration">Housewares and decoration: Here you will find items such as kitchen utensils, cutlery, pots, towels, bed linen and decoration objects.</string>
+    <string name="text_category_stationery_and_office">Stationery and office: In this section, you will find school and office supplies, such as notebooks, pens, pencils, diaries and computer items.</string>
+    <string name="text_category_others">Others: seasonal or unforeseen items.</string>
+    <string name="text_total_purchase_value_forecast">Total Purchase Value Forecast</string>
+
+</resources>

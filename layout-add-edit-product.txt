@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:gravity="start|top"
+                    android:hint="Product Name"
+                    android:inputType="textMultiLine"
+                    android:lines="2"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|top"
+                    android:layout_margin="6dp"
+                    android:hint="Product Price"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:text="Product Price Perception"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/rating_product_price_perception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:contentDescription="Product Price Perception"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:theme="@style/RatingBar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:text="Consumption Cycle"
+                android:textSize="18sp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_consumption_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:tooltipText="Multiple"
+                android:valueFrom="1"
+                android:valueTo="12"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chip_group_option"
+                android:layout_margin="6dp"
+                android:background="@color/dark_blue_300"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_consumption_cycle_0"
+                    style="Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:checkable="false"
+                    android:clickable="false"
+                    android:text="1X"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="#33FFFF00" />
+
+<!--                https://www.youtube.com/watch?v=pU0mvwIMAe0-->
+
+                <com.google.android.material.chip.Chip
+                   android:id="@+id/chip_consumption_cycle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="Widget.MaterialComponents.Chip.Choice"
+                    android:checkable="true"
+                    android:tag="1"
+                    android:text="Day"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_consumption_cycle_2"
+                    style="Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:tag="2"
+                    android:text="Week"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_consumption_cycle_3"
+                    style="Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:tag="3"
+                    android:text="Month"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_consumption_cycle_4"
+                    style="Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:tag="4"
+                    android:text="Year"
+                    android:textSize="12sp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+            <!--            https://www.geeksforgeeks.org/gridview-in-android-with-example/-->
+
+            <!--            https://www.youtube.com/watch?v=K2V6Y7zQ8NU-->
+
+            <!--            https://www.youtube.com/watch?v=ZTg-oXaCgBk-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_save_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_cancel_product_add_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
